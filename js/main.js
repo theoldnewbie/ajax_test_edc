@@ -4,7 +4,7 @@ $(function() {
 		success: function(data){
 			alert('Load was performed.');
 
-			$('.main-content').html();
+			$('.main-content').html(data);
 		}
 	});
 });
