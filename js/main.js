@@ -7,7 +7,7 @@ $(function() {
 			alert('Load was performed.');
 
 			$('.main-content').html(data);
-		};
+		}
 	});
 	});
 	
