@@ -1,4 +1,4 @@
-$(function() {
+
 
 	$('button').on('click', function(){
 		$.ajax({
@@ -9,6 +9,5 @@ $(function() {
 			$('.main-content').html(data);
 		}
 	});
-	});
+	})
 	
-});
