@@ -1,8 +1,7 @@
-
-
 	$('button').on('click', function(){
-		var id = jQuery.data(id);
-		if(id = 'b1'){
+		var id = $(this).attr("id");
+		console.log(id);
+		if(id == 'home'){
 			$.ajax({
 			url: 'http://theoldnewbie.github.io/ajax_test_edc/home.html',
 			success: function(data){
@@ -11,7 +10,7 @@
 				$('.main-content').html(data);
 			}
 		});
-		}else if(id = 'b2'){
+		}else if(id == 'books'){
 			$.ajax({
 			url: 'http://theoldnewbie.github.io/ajax_test_edc/books.html',
 			success: function(data){
@@ -20,7 +19,7 @@
 				$('.main-content').html(data);
 			}
 		});
-		}else if(id = 'b3'){
+		}else if(id == 'authors'){
 			$.ajax({
 			url: 'http://theoldnewbie.github.io/ajax_test_edc/authors.html',
 			success: function(data){
@@ -31,24 +30,3 @@
 		});
 		}
 	})
-
-	
-
-// $(button).click(function() {
-//     var id = jQuery.data(id);
-//     function send()
-//     {
-//        $.ajax({
-//                 type: "POST",
-//                 url: "/change.php",
-//                 data: "b"+id,
-                
-//                 success: function(html) {
-//                         $(".r"+id).empty();
-//                         $(".r"+id).append(html);
-//                 }
-//         });
- 
-//     }
- 
-// });
